@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registrarse</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
         integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
@@ -32,21 +32,27 @@
             <h2 class="ui teal image header">
                 <img src="https://semantic-ui.com/images/logo.png" class="image">
                 <div class="content">
-                    Inicia sesión
+                    Registro
                 </div>
             </h2>
             <form class="ui large form">
                 <div class="ui stacked segment">
+                <div class="field">
+                        <div class="ui left icon input">
+                            <i class="user icon"></i>
+                            <input type="text" name="name" placeholder="Ingrese su nombre">
+                        </div>
+                    </div>
                     <div class="field">
                         <div class="ui left icon input">
                             <i class="user icon"></i>
-                            <input type="text" name="email" placeholder="hola@gmail.com">
+                            <input type="text" name="email" placeholder="Ingrese un email">
                         </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input">
                             <i class="lock icon"></i>
-                            <input type="password" name="password" placeholder="Ingrese su contraseña">
+                            <input type="password" name="password" placeholder="Ingrese una contraseña">
                         </div>
                     </div>
                     <div class="ui fluid large teal submit button">Ingresar</div>
@@ -57,7 +63,7 @@
             </form>
 
             <div class="ui message">
-                Eres nuevo?<a href="/registro">Registrate aquí</a>
+                Ya estas registrado? <a href="/">Inicia sesión aquí</a>
             </div>
         </div>
     </div>
