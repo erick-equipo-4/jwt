@@ -26,4 +26,9 @@ Route::get('/registro', function () {
     return view('register');
 });
 
+Route::get('/hola', function () {
+    return "hola mundo";
+});
+
+
 

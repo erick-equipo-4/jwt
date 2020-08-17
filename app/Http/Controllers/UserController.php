@@ -66,6 +66,10 @@ class UserController extends Controller
     function test_token(){
         return response()->json(['success' => true]);
     }
+
+    function test_cors(){
+        return response()->header("Access-Control-Allow-Methods",  "GET");
+    }
 }
         
 
